@@ -13,6 +13,7 @@ router.get("/all", (request, response) => {
   });
 });
 
+//add the Category to Categories table
 router.post("/add", (request, response) => {
   const { title, description } = request.body;
   const statement = `insert into categories (title,description) values (?,?);`;

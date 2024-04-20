@@ -45,13 +45,13 @@ app.use((request, response, next) => {
 // add the routes
 const userRouter = require('./route/user')
 const categoryRouter = require('./route/category')
-//const blogRouter = require('./route/blog')
+const blogRouter = require('./route/blog')
 // const propertyRouter = require('./routes/property')
 // const bookingRouter = require('./routes/booking')
 
 app.use('/user', userRouter)
 app.use('/category', categoryRouter)
-// app.use('/image', imageRouter)
+app.use('/blog', blogRouter)
 // app.use('/property', propertyRouter)
 // app.use('/booking', bookingRouter)
 
